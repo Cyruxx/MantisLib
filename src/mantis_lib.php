@@ -3,6 +3,7 @@
  * MantisLib by Alexander Mahrt aka. Cyruxx
  *
  * MantisLib is a SoapConnector Class for Mantis Bugtracker
+ * Each function returns array of stdClass Objects as result
  * @version 1.0.0
  */
 class mantis_lib
@@ -18,7 +19,7 @@ class mantis_lib
             $this->MANTIS_CONNECT_USER = $params['username'];
             $this->MANTIS_CONNECT_PASS = $params['password'];
         } else {
-            throw new Exception('Constructor did not receive correct arguments.<br> Required Arguments are: url, username, password    as    array keys!');
+            throw new Exception('MantisLib Error: Constructor did not receive correct arguments.<br> Required Arguments are: url, username, password    as    array keys!');
         }
     }
 
@@ -29,14 +30,14 @@ class mantis_lib
             'password' => $this->MANTIS_CONNECT_PASS
         );
 
-        if (count($args) != 0) {
+        if (count($params) != 0) {
             //Check if username/password is given in parameters of function
-            if (array_key_exists('username', $params) || array_key_exists('password', $params)) {
+            if (array_key_exists('username', $params) && array_key_exists('password', $params)) {
                 $args = $params;
             } else {
                 $args = array_merge(
-                    $params,
-                    $args
+                    $args,
+                    $params
                 );
             }
         }
@@ -45,17 +46,17 @@ class mantis_lib
             $client = new SoapClient($this->MANTIS_CONNECT_URL . '?wsdl');
             $result = $client->__soapCall($func, $args);
         } catch (SoapFault $e) {
-            throw new Exception('MantisLib Error: ' . $e->faulstring);
+            throw new Exception('MantisLib Error: ' . $e->faultstring);
         }
         return $result;
     }
 
-    public function mc_version()
+    public function version()
     {
         return $this->make_soap_call('mc_version');
     }
 
-    public function mc_login($username, $password)
+    public function login($username, $password)
     {
         $args = array(
             'username' => $username,

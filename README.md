@@ -10,4 +10,4 @@ You can find a list of functions and return types here:
 
 MantisLib uses a SOAP-Client to connect with the Mantis API.
 
-[List of functions]:http://abload.de/img/diagramjqsyw.png
+[List of functions]:http://abload.de/img/diagrams9ss9.png

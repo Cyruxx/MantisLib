@@ -19,7 +19,7 @@ class mantis_lib
             $this->MANTIS_CONNECT_USER = $params['username'];
             $this->MANTIS_CONNECT_PASS = $params['password'];
         } else {
-            throw new Exception('MantisLib Error: Constructor did not receive correct arguments.<br> Required Arguments are: url, username, password    as    array keys!');
+            throw new Exception('MantisLib Error: Constructor did not receive correct arguments. Required Arguments are: url, username, password    as    array keys!');
         }
     }
 

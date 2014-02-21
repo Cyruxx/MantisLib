@@ -5,11 +5,12 @@ MantisLib is a PHP Class for Mantis Bugtracker API. It is supported by the PHP F
 
 Constructor requires array:
 
-            array(
-                  'url'       => 'http://mantis.soap/?wsdl',
-                  'username'  => 'username',
-                  'password'  => 'password'
-            );
+            $mantis = new mantis_lib(
+                                    array(
+                                          'url'       => 'http://mantis.soap/?wsdl',
+                                          'username'  => 'username',
+                                          'password'  => 'password'
+                                    ));
 
 
 You can find a list of functions and return types here:

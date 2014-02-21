@@ -4,11 +4,13 @@ MantisLib
 MantisLib is a PHP Class for Mantis Bugtracker API. It is supported by the PHP Framework CodeIgniter or as standalone Library.
 
 Constructor requires array:
+
             array(
                   'url'       => 'http://mantis.soap/?wsdl',
                   'username'  => 'username',
                   'password'  => 'password'
             );
+
 
 You can find a list of functions and return types here:
 

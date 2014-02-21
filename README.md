@@ -1,7 +1,7 @@
 MantisLib
 =========
 
-MantisLib is a PHP Class for Mantis API. It is supported by the PHP Framework CodeIgniter or as standalone Library.
+MantisLib is a PHP Class for Mantis Bugtracker API. It is supported by the PHP Framework CodeIgniter or as standalone Library.
 
 
 You can find a list of functions and return types here:
@@ -10,4 +10,14 @@ You can find a list of functions and return types here:
 
 MantisLib uses a SOAP-Client to connect with the Mantis API.
 
+Mantis Bugtracker: 
+
+[Mantis GitHub]
+
+      OR
+      
+[Mantis Website]
+
+[Mantis GitHub]:https://github.com/mantisbt/mantisbt
+[Mantis Website]:http://www.mantisbt.org/
 [List of functions]:http://abload.de/img/diagrams9ss9.png

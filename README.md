@@ -29,4 +29,4 @@ Mantis Bugtracker:
 
 [Mantis GitHub]:https://github.com/mantisbt/mantisbt
 [Mantis Website]:http://www.mantisbt.org/
-[List of functions]:http://abload.de/img/diagrams9ss9.png
+[List of functions]:https://github.com/Cyruxx/MantisLib/blob/master/img/diagrams9ss9.png

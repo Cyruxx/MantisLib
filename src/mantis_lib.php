@@ -6,7 +6,7 @@
  * Each function returns array of stdClass Objects as result
  * @version 1.0.0
  */
-class mantis_lib
+class MantisLib
 {
     private $MANTIS_CONNECT_URL = '';
     private $MANTIS_CONNECT_USER = '';
